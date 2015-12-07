@@ -9,7 +9,6 @@ namespace EndaMcGoldrick_s00146427.Models
         public int ID { get; set; }     //Primary Key
         [Display(Name = "Title of Movie")]
         public string Title { get; set; }
-
         public virtual ICollection<Actor> actor { get; set; }
     }
 
