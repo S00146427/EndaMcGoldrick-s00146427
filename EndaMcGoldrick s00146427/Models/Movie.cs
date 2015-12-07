@@ -10,8 +10,6 @@ namespace EndaMcGoldrick_s00146427.Models
         public int ID { get; set; }     //Primary Key
         [Display(Name = "Title of Movie")]
         public string Title { get; set; }
-        [Display(Name = "Movie Genre")]
-        public string Genre { get; set; }
 
         public virtual ICollection<Actor> actor { get; set; }
     }
@@ -28,7 +26,7 @@ namespace EndaMcGoldrick_s00146427.Models
     {
         public MovieDb():base("MovieDb")
         { }
-        public DbSet<Movie> Blogs { get; set; }
-        public DbSet<Actor> Posts { get; set; }
+        public DbSet<Movie> movies { get; set; }
+        public DbSet<Actor> actors { get; set; }
     }
 }
